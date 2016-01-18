@@ -18,4 +18,14 @@ RSpec.describe StringCalculator do
     # p my_calc.add( "5" ) == 5
     expect(my_calc.add( "5" )).to eq(5)
   end
+
+  it "returns sum two numbers" do
+    my_calc = StringCalculator.new
+
+    # p my_calc.add( "2,5" ) == 7
+    expect(my_calc.add( "2,5" )).to eq(7)
+
+    # p my_calc.add( "8,8" ) == 16
+    expect(my_calc.add( "8,8" )).to eq(16)
+  end
 end
